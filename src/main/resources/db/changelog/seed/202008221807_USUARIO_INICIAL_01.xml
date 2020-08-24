@@ -9,7 +9,7 @@
             <column name="nombre" value="Admin"/>
             <column name="apellido" value="Admin"/>
             <column name="email" value="villalba.luifer@gmail.com"/>
-            <column name="password" value="$2y$12$xjiW2Wk3APdQ4ckcxaWL9eoh2GkspHwJa5WwpudKkFtMbrclyOT3q"/>
+            <column name="password" value="$2a$12$EIypoEcnrWdaIVSxWK3dzevCRk0xHOvPhLbSj6VgX7xuI.uswZV92"/>
         </insert>
 
     </changeSet>
