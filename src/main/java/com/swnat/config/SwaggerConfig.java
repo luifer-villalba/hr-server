@@ -16,10 +16,10 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 import java.util.List;
 
 /**
- * @author luis
+ * @author luifer
  * @version 1.0
+ * @since 23-08-2020
  */
-
 @Configuration
 @EnableSwagger2
 public class SwaggerConfig {
@@ -29,7 +29,7 @@ public class SwaggerConfig {
     @Bean
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2)
-                .groupName("swnat-api")
+                .groupName("pp2-api")
                 .securitySchemes(Lists.newArrayList(apiKey())).securityContexts(Lists.newArrayList(securityContext()))
                 .select()
                 .apis(RequestHandlerSelectors.any())
@@ -41,7 +41,7 @@ public class SwaggerConfig {
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
                 .title("People Management - API ")
-                .description("Software Natura")
+                .description("Desarrollado para las clases de programación")
                 .contact(contact())
                 .version("0.1.0")
                 .build();
@@ -64,6 +64,6 @@ public class SwaggerConfig {
     }
 
     private Contact contact(){
-        return new Contact("Admin","","luis@softwarenatura.com");
+        return new Contact("Admin","","villalba.luifer@gmail.com");
     }
 }

@@ -10,6 +10,11 @@ import org.springframework.data.repository.query.Param;
 
 import java.util.Optional;
 
+/**
+ * @author luifer
+ * @version 1.0
+ * @since 23-08-2020
+ */
 @Repository
 public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
 

@@ -1,14 +1,22 @@
 package com.swnat.model;
 
+import io.swagger.annotations.ApiModelProperty;
+
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 
+/**
+ * @author luifer
+ * @version 1.0
+ * @since 23-08-2020
+ */
 @Entity
 @Table(name = "colaborador", schema = "management")
 public class Colaborador implements Serializable {
 
     @Id
+    @ApiModelProperty(hidden = true)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private Long id;
@@ -19,6 +27,9 @@ public class Colaborador implements Serializable {
     @Column(name = "apellido")
     private String apellido;
 
+    @Column(name = "email")
+    private String email;
+
     @Column(name = "documento")
     private String documento;
 
@@ -28,20 +39,11 @@ public class Colaborador implements Serializable {
     @Column(name = "direccion")
     private String direccion;
 
-    @Column(name = "genero")
-    private String genero;
-    
     @Column(name = "curriculum_url")
     private String curriculumUrl;
 
     @Column(name = "nro_celular")
     private String celular;
-
-    @Column(name = "desafio_url")
-    private String desafioUrl;
-
-    @Column(name = "mail")
-    private String mail;
 
     @Column(name = "comentario")
     private String comentario;
@@ -89,14 +91,6 @@ public class Colaborador implements Serializable {
         this.direccion = direccion;
     }
 
-    public String getGenero() {
-        return genero;
-    }
-
-    public void setGenero(String genero) {
-        this.genero = genero;
-    }
-
     public String getCurriculumUrl() {
         return curriculumUrl;
     }
@@ -111,22 +105,6 @@ public class Colaborador implements Serializable {
 
     public void setCelular(String celular) {
         this.celular = celular;
-    }
-
-    public String getDesafioUrl() {
-        return desafioUrl;
-    }
-
-    public void setDesafioUrl(String desafioUrl) {
-        this.desafioUrl = desafioUrl;
-    }
-
-    public String getMail() {
-        return mail;
-    }
-
-    public void setMail(String mail) {
-        this.mail = mail;
     }
 
     public String getComentario() {
@@ -153,4 +131,11 @@ public class Colaborador implements Serializable {
         this.documento = documento;
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
 }

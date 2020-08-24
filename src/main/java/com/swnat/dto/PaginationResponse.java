@@ -3,6 +3,11 @@ package com.swnat.dto;
 import java.io.Serializable;
 import java.util.List;
 
+/**
+ * @author luifer
+ * @version 1.0
+ * @since 23-08-2020
+ */
 public class PaginationResponse<T extends Serializable> implements Serializable {
 
     private static final long serialVersionUID = 1620916850610428597L;

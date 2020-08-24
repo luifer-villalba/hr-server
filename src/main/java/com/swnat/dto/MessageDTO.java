@@ -2,6 +2,11 @@ package com.swnat.dto;
 
 import java.io.Serializable;
 
+/**
+ * @author luifer
+ * @version 1.0
+ * @since 23-08-2020
+ */
 public class MessageDTO implements Serializable{
 
     

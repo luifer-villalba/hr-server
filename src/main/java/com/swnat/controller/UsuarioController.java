@@ -13,11 +13,16 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 
+/**
+ * @author luifer
+ * @version 1.0
+ * @since 23-08-2020
+ */
 @RestController
 @RequestMapping("/api/v1/usuarios")
 public class UsuarioController {
 
-    private UsuarioService usuarioService;
+    private final UsuarioService usuarioService;
 
     public UsuarioController(UsuarioService usuarioService) {
         this.usuarioService = usuarioService;

@@ -10,10 +10,6 @@ databaseChangeLog:
   - include:
       file: db/changelog/hrdb/202008221724_COLABORADOR_AC.xml
   - include:
-      file: db/changelog/hrdb/202008221731_COLABORADOR_AC.xml
-  - include:
-      file: db/changelog/hrdb/202008221734_COLABORADOR_RC.xml
-  - include:
       file: db/changelog/hrdb/202008221804_COLABORADOR_AC.xml
   - include:
       file: db/changelog/seed/202008221807_USUARIO_INICIAL_01.xml

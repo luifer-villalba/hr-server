@@ -5,7 +5,7 @@
 
     <changeSet author="luifer" id="ppl_usuario_ac_001">
         <addColumn tableName="usuario" schemaName="management">
-            <column name="rol" type="VARCHAR(60)" defaultValue="ROLE_ADMIN"/>
+            <column name="rol" type="VARCHAR(60)" defaultValue="ROLE_USER"/>
         </addColumn>
     </changeSet>
 

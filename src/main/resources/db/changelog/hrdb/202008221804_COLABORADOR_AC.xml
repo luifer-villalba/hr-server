@@ -10,8 +10,5 @@
         <addColumn tableName="colaborador" schemaName="management">
             <column name="direccion" type="TEXT"/>
         </addColumn>
-        <addColumn tableName="colaborador" schemaName="management">
-            <column name="genero" type="VARCHAR(60)"/>
-        </addColumn>
     </changeSet>
 </databaseChangeLog>

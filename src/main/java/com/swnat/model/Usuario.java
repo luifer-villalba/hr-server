@@ -8,6 +8,11 @@ import org.springframework.security.crypto.bcrypt.BCrypt;
 import javax.persistence.*;
 import java.io.Serializable;
 
+/**
+ * @author luifer
+ * @version 1.0
+ * @since 23-08-2020
+ */
 @Entity
 @Table(name = "usuario", schema = "management")
 public class Usuario implements Serializable {

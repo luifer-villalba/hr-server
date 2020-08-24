@@ -8,11 +8,16 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 
+/**
+ * @author luifer
+ * @version 1.0
+ * @since 23-08-2020
+ */
 @RestController
 @RequestMapping("/api/v1/colaboradores")
 public class ColaboradorController {
 
-    private ColaboradorService colaboradorService;
+    private final ColaboradorService colaboradorService;
 
     public ColaboradorController(ColaboradorService colaboradorService) {
         this.colaboradorService = colaboradorService;
